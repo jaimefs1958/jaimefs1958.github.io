@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Autor" content="Esteban" />
+    <title>Ejemplo Formulario</title>
+    <style>
+        header {
+            text-align: center;
+            background-color: #AAAAAA;
+            padding: 2em;
+        }
+
+        input {
+            width: 100%;
+        }
+        input [type="checkbox"]{
+            width: auto;
+        }
+
+        form {
+            width: 33%;
+            /*margin:auto centra horizontalmente el contenido*/
+            margin: auto;
+            margin-top: 3em;
+            border: 2px solid lightgrey;
+            border-radius: 15px;
+            padding: 2em;
+        }
+
+        form button {
+            margin-top: 0.5em;
+            text-align: 10;
+        }
+        
+        }
+        select {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de Formulario</h1>
+
+    </header>
+    <main>
+        <form method="GET">
+
+            <label>Nombre:</label>
+            <input type="text" placeholder="Ingrese un nombre..(max 15 caract)." name="nombre" required minlength="3"
+                maxlength="15" />
+
+            <label>Apellido:</label>
+            <input type="text" placeholder="Ingrese un Apellido..(max 15 caract)." name="apellido" required
+                minlength="3" maxlength="15" />
+            
+            <label>Tipo de Documento:</label>
+            <select name="tipoDocumento" required>
+                <option value="dni">DNI</option>
+                <option value="le">LE</option>
+                <option value="ci">CI</option>
+            </select>
+            
+            <label>Correo Electronico:</label>
+            <input type="email" name="correo" required />
+            
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" name="fecha de nacimiento" />
+            
+            <label>Acepto los terminos y condiciones</label>
+            <input type="checkbox" />
+            <div class="botonera">
+                <button>Send</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
